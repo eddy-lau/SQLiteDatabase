@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "SQLiteDatabase"
   s.version          = "0.1.0"
-  s.summary          = "A short description of SQLiteDatabase."
+  s.summary          = "An Objective-C wrapper for SQLite functions"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,16 +18,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+A Simple Objective-C wrapper for SQLite functions
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/SQLiteDatabase"
+  s.homepage         = "https://github.com/eddy-lau/SQLiteDatabase"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Eddie Lau" => "eddie@touchutility.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/SQLiteDatabase.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/eddy-lau/SQLiteDatabase.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
+  s.requires_arc = false
 
   s.source_files = 'SQLiteDatabase/Classes/**/*'
   s.resource_bundles = {
@@ -37,4 +39,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.library = 'sqlite3'
 end
