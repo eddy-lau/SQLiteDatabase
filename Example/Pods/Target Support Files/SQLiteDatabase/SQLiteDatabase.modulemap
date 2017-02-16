@@ -1,6 +1,0 @@
-framework module SQLiteDatabase {
-  umbrella header "SQLiteDatabase-umbrella.h"
-
-  export *
-  module * { export * }
-}

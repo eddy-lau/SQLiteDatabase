@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#include <sqlite3.h>
+
+struct sqlite3;
+typedef struct sqlite3 sqlite3;
 
 typedef int (^SQLiteCallbackBlock)(int argc, char **argv, char **azColName);
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SQLiteDatabase"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "An Objective-C wrapper for SQLite functions"
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,6 @@ A Simple Objective-C wrapper for SQLite functions
   s.requires_arc = false
 
   s.source_files = 'SQLiteDatabase/Classes/**/*'
-  s.resource_bundles = {
-    'SQLiteDatabase' => ['SQLiteDatabase/Assets/*.png']
-  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

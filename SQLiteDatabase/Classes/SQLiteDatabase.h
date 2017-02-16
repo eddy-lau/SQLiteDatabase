@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#include <sqlite3.h>
 #import "SQLOperation.h"
+
+struct sqlite3;
+typedef struct sqlite3 sqlite3;
 
 typedef void (^SQLiteDatabaseQueryResultBlock)(NSDictionary *row);
 

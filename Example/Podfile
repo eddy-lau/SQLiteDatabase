@@ -1,8 +1,8 @@
 #use_frameworks!
 
 
-target 'SQLiteDatabase_Tests', :exclusive => true do
+target 'SQLiteDatabase_Tests' do
   pod 'SQLiteDatabase', :path => '../'
 
-  
+
 end

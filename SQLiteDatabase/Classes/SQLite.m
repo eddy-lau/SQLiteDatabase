@@ -7,7 +7,7 @@
 //
 
 #import "SQLite.h"
-
+#include <sqlite3.h>
 
 @implementation SQLite
 

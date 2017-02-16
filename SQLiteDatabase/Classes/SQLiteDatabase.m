@@ -6,6 +6,7 @@
 //  Copyright 2011 TouchUtility.com. All rights reserved.
 //
 
+#include <sqlite3.h>
 #import "SQLiteDatabase.h"
 #import "SQLite.h"
 #import "SQLOperation.h"
